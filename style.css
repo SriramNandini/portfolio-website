@@ -1,0 +1,269 @@
+/* === Theme Styles === */
+body.theme-dark {
+background-color: #0f0f0f;
+color: #eee;
+}
+
+body.theme-light {
+background-color: #ffffff;
+color: #111;
+}
+
+.navbar, .hero, .about-section {
+transition: background 0.3s, color 0.3s;
+}
+
+/* Navbar text colors */
+body.theme-light .navbar .nav-link,
+body.theme-light .navbar-brand,
+body.theme-light .social a {
+color: #000 !important;
+}
+
+body.theme-dark .navbar .nav-link,
+body.theme-dark .navbar-brand,
+body.theme-dark .social a {
+color: #fff !important;
+}
+
+/* === Hero Section === */
+.hero {
+height: 100vh;
+min-height: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+padding-top: 100px;
+padding-bottom: 50px;
+background-color: transparent;
+}
+
+.blob-yellow {
+width: 200px;
+top: 20%;
+right: 10%;
+z-index: 1;
+}
+
+.profile {
+width: 180px;
+border-radius: 50%;
+top: 25%;
+right: 12%;
+z-index: 2;
+}
+
+.social-icons a {
+color: inherit;
+margin-bottom: 12px;
+text-decoration: none;
+transition: transform 0.2s ease;
+}
+
+body.theme-dark .social-icons a {
+color: #fff;
+}
+
+body.theme-light .social-icons a {
+color: #000;
+}
+
+.social-icons a:hover {
+transform: scale(1.2);
+}
+
+/* === About Section === */
+.about-section {
+padding-top: 80px;
+padding-bottom: 80px;
+position: relative;
+z-index: 1;
+transition: background-color 0.3s, color 0.3s;
+}
+
+/* Theme-specific About styles */
+body.theme-dark .about-section {
+background-color: #0b0c10;
+color: #fff;
+}
+
+body.theme-light .about-section {
+background-color: #fff;
+color: #111;
+}
+
+/* About Text Styles */
+.section-heading {
+font-size: 2rem;
+font-weight: bold;
+}
+
+.about-text {
+font-size: 1rem;
+line-height: 1.8;
+}
+
+body.theme-light .about-section h2,
+body.theme-light .about-section p {
+color: #111 !important;
+}
+
+body.theme-dark .about-section h2,
+body.theme-dark .about-section p {
+color: #fff !important;
+}
+
+/* Hand Image */
+.hand-image {
+max-width: 200px;
+}
+
+/* Blobs */
+.blob-grey {
+width: 180px;
+bottom: 0;
+left: 0;
+z-index: -1;
+position: absolute;
+}
+
+.blob-yellow-2 {
+width: 180px;
+top: 0;
+right: 0;
+z-index: -1;
+position: absolute;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+.blob-yellow,
+.profile {
+display: none;
+}
+.social {
+left: 5px;
+}
+}
+
+/* Text colors for light theme */
+body.theme-light h1,
+body.theme-light h2,
+body.theme-light p,
+body.theme-light .hero .btn-outline-light {
+color: #111 !important;
+}
+
+/* Text colors for dark theme */
+body.theme-dark h1,
+body.theme-dark h2,
+body.theme-dark p,
+body.theme-dark .hero .btn-outline-light {
+color: #eee !important;
+}
+
+/* Override for Get In Touch button */
+body.theme-light .hero .btn-outline-light {
+border-color: #111;
+color: #111;
+}
+
+body.theme-dark .hero .btn-outline-light {
+border-color: #eee;
+color: #eee;
+}
+
+/* Sidebar navbar */
+.social {
+position: fixed;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+z-index: 1030;
+padding-left: 8px;
+}
+
+.social a {
+color: inherit;
+margin-bottom: 15px;
+transition: transform 0.2s;
+}
+
+.social a:hover {
+transform: scale(1.2);
+}
+
+/* Email styling */
+.email-text {
+writing-mode: vertical-rl;
+transform: rotate(180deg);
+text-decoration: none;
+font-size: 0.85rem;
+letter-spacing: 0.1rem;
+transition: color 0.3s;
+color: inherit;
+}
+
+body.theme-dark .email-text {
+color: #fff;
+}
+
+body.theme-light .email-text {
+color: #000;
+}
+
+.email-text:hover {
+text-decoration: underline;
+}
+/* Fixed Sidebar Social Icons */
+.social-icons {
+position: fixed;
+bottom: 0;
+left: 15px;
+z-index: 1030;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 20px;
+}
+
+/* Fixed Email on Right */
+.email {
+position: fixed;
+bottom: 0;
+right: 15px;
+z-index: 1030;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 20px;
+}
+
+.email-text {
+writing-mode: vertical-rl;
+transform: rotate(180deg);
+text-decoration: none;
+font-size: 0.85rem;
+letter-spacing: 0.1rem;
+transition: color 0.3s;
+color: inherit;
+}
+
+.email-text:hover {
+text-decoration: underline;
+}
+.line-horizontal {
+width: 60px;
+height: 1px;
+background-color: currentColor;
+margin: 12px 0;
+opacity: 0.5;
+}
+body.theme-dark .bottom-line {
+background-color: #fff;
+}
+
+body.theme-light .bottom-line {
+background-color: #000;
+}
