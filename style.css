@@ -297,3 +297,46 @@ margin: 0 auto 1rem;
 display: block;
 }
 }
+@media (max-width: 768px) {
+.hero {
+flex-direction: column;
+text-align: center;
+padding: 2rem 1rem;
+}
+
+.hero .profile {
+position: static !important;
+margin: 2rem auto 0 auto;
+display: block;
+width: 140px;
+height: auto;
+}
+
+.hero div {
+z-index: 2;
+position: relative;
+}
+
+.blob-yellow {
+display: none;
+}
+}
+/* 🌞 Light Theme - Collapsed Navbar */
+body.theme-light .navbar-collapse {
+background-color: #ffffff !important;
+border-radius: 0 0 10px 10px;
+}
+
+body.theme-light .navbar-collapse .nav-link {
+color: #111 !important;
+}
+
+/* 🌙 Dark Theme - Collapsed Navbar */
+body.theme-dark .navbar-collapse {
+background-color: #0f0f0f !important;
+border-radius: 0 0 10px 10px;
+}
+
+body.theme-dark .navbar-collapse .nav-link {
+color: #eee !important;
+}
