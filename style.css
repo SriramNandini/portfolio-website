@@ -240,15 +240,7 @@ align-items: center;
 padding-bottom: 20px;
 }
 
-.email-text {
-writing-mode: vertical-rl;
-transform: rotate(180deg);
-text-decoration: none;
-font-size: 0.85rem;
-letter-spacing: 0.1rem;
-transition: color 0.3s;
-color: inherit;
-}
+
 
 .email-text:hover {
 text-decoration: underline;
@@ -266,4 +258,42 @@ background-color: #fff;
 
 body.theme-light .bottom-line {
 background-color: #000;
+}
+/* Responsive Layout */
+@media (max-width: 768px) {
+.hero {
+flex-direction: column;
+text-align: center;
+padding: 2rem 1rem;
+}
+
+.profile {
+position: static;
+margin-top: 2rem;
+display: block;
+width: 150px;
+}
+
+.social-icons,
+.email {
+position: static;
+flex-direction: row;
+justify-content: center;
+margin-top: 1rem;
+gap: 15px;
+}
+
+.navbar-collapse {
+background-color: #0f0f0f;
+padding: 1rem;
+}
+
+.about-section .row {
+flex-direction: column-reverse;
+}
+
+.hand-image {
+margin: 0 auto 1rem;
+display: block;
+}
 }
